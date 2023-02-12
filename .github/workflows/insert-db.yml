@@ -18,3 +18,5 @@ jobs:
       run: |-
         pip install -r requirements.txt
     - run: python3 db-insert.py
+      env:
+        PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
